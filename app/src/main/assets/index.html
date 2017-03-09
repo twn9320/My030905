@@ -1,9 +1,19 @@
 <html>
+<script language="javascript">
+   function calc()
+    {
+         var a1, a2, ans;
+         a1 = eval(document.getElementById("q1").value);
+         a2 = eval(document.getElementById("q2").value);
+         ans = a1 + a2;
+         document.getElementById("ans").innerHTML = ans;
+     }
+ </script>
 <body>
 <h1>這是標題</h1>
 <p>網頁內容</p>
 <p><input type="number" id ="q1"/> +<input type="number" id="q2" size="10" /></p>
 <p><input type="button" id="cal" value="=" onclick="calc()"/><span id="ans"></span></p>
-<a href = "sec.html"></a>
+<a href = "sec.html">第二頁</a>
 </body>
 </html>
